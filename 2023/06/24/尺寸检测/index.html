@@ -16,22 +16,32 @@
   <meta name="author" content="cjj">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Markdown 标题下面是使用Markdown设置标题(几号标题) 123456# 一级（注意#后面要有空格）## 二级### 三级#### 四级##### 五级###### 六级    Markdown 段落换行进行段落的换行操作有 1.进行两次换行2.空格2次再换行 Markdown 字体如下所示:  1234567891011121314151617181920212223*斜体文本*--">
+    <meta name="description" content="本次实验是测量图像中的物体尺寸大小，完成本次实验的关键点是比率指标（pixels_per_metric）。比率指标是给定度量的像素数。为了获取pixels_per_metric，我们得需要找到一个参考物。得到参考物现实中的尺寸大小。从而pixels_per_metric&#x3D;pix(图像中的像素值)&#x2F;width(现实长度)，意为每width的长度有pix个像素，从而在得到其他被测物">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown">
-<meta property="og:url" content="https://bbbblazar.github.io/2023/06/21/Markdown/index.html">
+<meta property="og:title" content="尺寸检测">
+<meta property="og:url" content="https://bbbblazar.github.io/2023/06/24/%E5%B0%BA%E5%AF%B8%E6%A3%80%E6%B5%8B/index.html">
 <meta property="og:site_name" content="bbblazar_blog">
-<meta property="og:description" content="Markdown 标题下面是使用Markdown设置标题(几号标题) 123456# 一级（注意#后面要有空格）## 二级### 三级#### 四级##### 五级###### 六级    Markdown 段落换行进行段落的换行操作有 1.进行两次换行2.空格2次再换行 Markdown 字体如下所示:  1234567891011121314151617181920212223*斜体文本*--">
+<meta property="og:description" content="本次实验是测量图像中的物体尺寸大小，完成本次实验的关键点是比率指标（pixels_per_metric）。比率指标是给定度量的像素数。为了获取pixels_per_metric，我们得需要找到一个参考物。得到参考物现实中的尺寸大小。从而pixels_per_metric&#x3D;pix(图像中的像素值)&#x2F;width(现实长度)，意为每width的长度有pix个像素，从而在得到其他被测物">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-06-21T07:06:53.000Z">
-<meta property="article:modified_time" content="2023-06-21T17:38:06.800Z">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E7%BE%8E%E5%85%83.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E8%A2%AB%E6%B5%8B%E7%89%A9.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E8%A2%AB%E6%B5%8B%E7%89%A9.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E9%AB%98%E6%96%AF.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E8%BE%B9%E7%BC%98.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E8%86%A8%E8%83%80%E5%92%8C%E8%85%90%E8%9A%80.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E8%BD%AE%E5%BB%933.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E8%BD%AE%E5%BB%934.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E8%BD%AE%E5%BB%935.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E8%BD%AE%E5%BB%936.png">
+<meta property="article:published_time" content="2023-06-24T06:43:29.000Z">
+<meta property="article:modified_time" content="2023-06-24T07:29:20.384Z">
 <meta property="article:author" content="cjj">
-<meta property="article:tag" content="一个标签">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bbbblazar.github.io/img/%E7%BE%8E%E5%85%83.png">
   
   
   
-  <title>Markdown - bbblazar_blog</title>
+  <title>尺寸检测 - bbblazar_blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +207,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Markdown"></span>
+            <span id="subtitle" data-typed-text="尺寸检测"></span>
           
         </div>
 
@@ -208,8 +218,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-06-21 15:06" pubdate>
-          2023年6月21日 下午
+        <time datetime="2023-06-24 14:43" pubdate>
+          2023年6月24日 下午
         </time>
       </span>
     
@@ -220,7 +230,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.2k 字
+          2.7k 字
         
       </span>
     
@@ -231,7 +241,7 @@
         
         
         
-          19 分钟
+          23 分钟
         
       </span>
     
@@ -269,88 +279,40 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Markdown</h1>
+            <h1 style="display: none">尺寸检测</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Markdown-标题"><a href="#Markdown-标题" class="headerlink" title="Markdown 标题"></a>Markdown 标题</h1><p>下面是使用Markdown设置标题(几号标题)</p>
-<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs clean"># 一级（注意#后面要有空格）<br>## 二级<br>### 三级<br>#### 四级<br>##### 五级<br>###### 六级<br></code></pre></td></tr></table></figure>
-
-
-
-<h1 id="Markdown-段落"><a href="#Markdown-段落" class="headerlink" title="Markdown 段落"></a>Markdown 段落</h1><h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><p>进行段落的换行操作有</p>
-<p>1.进行两次换行<br>2.空格2次再换行</p>
-<h2 id="Markdown-字体"><a href="#Markdown-字体" class="headerlink" title="Markdown 字体"></a>Markdown 字体</h2><p>如下所示: </p>
-<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli">*斜体文本*<span class="hljs-params">-----------</span>（一个*号是斜体）<br><br>_斜体文本_<span class="hljs-params">-----------</span>（一个下划是斜体）<br><br>**粗体文本**<span class="hljs-params">---------</span>（两个*号是粗体）<br><br>__粗体文本__<span class="hljs-params">---------</span>（两个下划是粗体）<br><br>***粗斜体文本***<span class="hljs-params">-----</span>（三个*号是粗斜）<br><br>___粗斜体文本___<span class="hljs-params">-----</span>（三个下划是粗斜）<br><br>~~删除线文本~~<span class="hljs-params">-------</span>（两个波浪是删除）<br><br>&lt;u&gt;下划线文本&lt;<span class="hljs-string">/u</span>&gt;<span class="hljs-params">----</span>（一个u符是下划）<br><br>创建一个脚注<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="阿巴阿巴[//]: # (注释文本，不会在浏览器中显示。)[^_^]: # (注释文本，不会在浏览器中显示。)">[1]</span></a></sup><br><br>
-
-
-# Markdown 列表
-
-
-共有三种列表
-
-
-
-
-## 有序列表
-
-
-
-就是用数字加.的方式
-
-
-
-<hexoPostRenderCodeBlock><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">1.</span> 这样<br><span class="hljs-bullet">2.</span> 表示<br><span class="hljs-bullet">3.</span> .是在英文输入法下且之后内容前有个空格<br></code></pre></td></tr></table></figure>
-
-
-
-<h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><p>使用了+（加号），-（减号），<em>（</em>号）；</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">*</span> 听话的便当<br><br><span class="hljs-bullet">*</span> 听话的便当<br><br><span class="hljs-bullet">*</span> 听话的便当<br><br><span class="hljs-bullet">+</span> 注意<br><br><span class="hljs-bullet">+</span> 注意<br><br><span class="hljs-bullet">+</span> 注意<br><br><span class="hljs-bullet">-</span> 符号后加空格<br><br><span class="hljs-bullet">-</span> 符号后加空格<br><br><span class="hljs-bullet">-</span> 符号后加空格<br></code></pre></td></tr></table></figure>
-
-
-<p>输出为：一个点加内容</p>
-<h2 id="嵌套列表"><a href="#嵌套列表" class="headerlink" title="嵌套列表"></a>嵌套列表</h2><h3 id="有序嵌套列表"><a href="#有序嵌套列表" class="headerlink" title="有序嵌套列表"></a>有序嵌套列表</h3><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs 1c"><span class="hljs-number">1</span>. 听话的便当<br>    - 听话的便当<br>    - 听话的便当<br><span class="hljs-number">2</span>. 注意空格<br>    + 空格<br>    + 空格<br><span class="hljs-number">3</span>. <span class="hljs-string">&quot;-&quot;</span>，<span class="hljs-string">&quot;*&quot;</span>和<span class="hljs-string">&quot;+&quot;</span>前面有四个空格<br>    * <span class="hljs-string">&quot;-&quot;</span>，<span class="hljs-string">&quot;*&quot;</span>和<span class="hljs-string">&quot;+&quot;</span>前面有四个空格<br>    * <span class="hljs-string">&quot;-&quot;</span>，<span class="hljs-string">&quot;*&quot;</span>和<span class="hljs-string">&quot;+&quot;</span>前面有四个空格<br></code></pre></td></tr></table></figure>
-
-
-
-<h3 id="无序嵌套列表"><a href="#无序嵌套列表" class="headerlink" title="无序嵌套列表"></a>无序嵌套列表</h3><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs 1c">- 就是把数字换成符号<br>    - 就是把数字换成符号<br>    - 就是把数字换成符号<br>+ 注意空格<br>    + 空格<br>    + 空格<br>* <span class="hljs-string">&quot;-&quot;</span>，<span class="hljs-string">&quot;*&quot;</span>和<span class="hljs-string">&quot;+&quot;</span>前面有四个空格<br>    * <span class="hljs-string">&quot;-&quot;</span>，<span class="hljs-string">&quot;*&quot;</span>和<span class="hljs-string">&quot;+&quot;</span>前面有四个空格<br>    * <span class="hljs-string">&quot;-&quot;</span>，<span class="hljs-string">&quot;*&quot;</span>和<span class="hljs-string">&quot;+&quot;</span>前面有四个空格<br></code></pre></td></tr></table></figure>
-
-
-
-<h1 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h1><figure class="highlight node-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs node-repl"><span class="hljs-meta prompt_">&gt;</span> <span class="language-javascript">听话的便当</span><br><span class="hljs-meta prompt_">&gt;</span> <span class="language-javascript"><span class="hljs-title class_">Markdown</span></span><br><span class="hljs-meta prompt_">&gt;</span> <span class="language-javascript">区块</span><br></code></pre></td></tr></table></figure>
-
-
-<p>区块里可以使用列表，列表里可以使用区块</p>
-<h1 id="Markdown-代码"><a href="#Markdown-代码" class="headerlink" title="Markdown 代码"></a>Markdown 代码</h1><h1 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h1><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs awk">这是[听话的便当](https:<span class="hljs-regexp">//</span>www/thdbd.gitbook.io)的网站<br><br>或者<br><br>这是听话的便当的网站 &lt;https:<span class="hljs-regexp">//</span>www.thdbd.gitbook.io&gt; <br>[<span class="hljs-regexp">//</span>]: <span class="hljs-comment"># (直接显示链接)</span><br></code></pre></td></tr></table></figure>
-
-<p>或者像论文文献一样</p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs less">这是我的<span class="hljs-selector-attr">[网站]</span><span class="hljs-selector-attr">[1]</span><br><br>这是我的<span class="hljs-selector-attr">[第二个网站]</span><span class="hljs-selector-attr">[2]</span><br><br>······<br><br>这是我的<span class="hljs-selector-attr">[网站]</span><span class="hljs-selector-attr">[1]</span><br><br>这是我的<span class="hljs-selector-attr">[第二个网站]</span><span class="hljs-selector-attr">[2]</span><br><br><span class="hljs-selector-attr">[1]</span>: <span class="hljs-selector-tag">https</span>:<span class="hljs-comment">//www.github.io/</span><br><span class="hljs-selector-attr">[2]</span>: <span class="hljs-selector-tag">https</span>:<span class="hljs-comment">//www.gitbook.io/</span><br></code></pre></td></tr></table></figure>
-
-
-<h1 id="Markdown-表格"><a href="#Markdown-表格" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h1><p>Markdown 表格使用 | 来分隔不同的单元格；<br>使用 - 来分隔表头和其他行；<br>例如：</p>
-<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs gherkin">|<span class="hljs-string">  thdbd  </span>|<span class="hljs-string">  thdbd  </span>|<br>|<span class="hljs-string">  -----  </span>|<span class="hljs-string">  -----  </span>|<br>|<span class="hljs-string">   123   </span>|<span class="hljs-string">   456   </span>|<br>|<span class="hljs-string">   321   </span>|<span class="hljs-string">   654   </span>|<br><br><br>```  <br>也可以设计一下表格内文字的居中方式：<br>-: 设置内容和标题栏居右对齐。<br>:- 设置内容和标题栏居左对齐。<br>:-: 设置内容和标题栏居中对齐。<br><br><br>例如：<br><br><br></code></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th align="center">thdbd</th>
-<th align="center">thdbd</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">123</td>
-<td align="center">456</td>
-</tr>
-<tr>
-<td align="center">321</td>
-<td align="center">654</td>
-</tr>
-</tbody></table>
-<pre><code class="hljs">
-
-&lt;section class=&quot;footnotes&quot;&gt;&lt;div class=&quot;footnote-list&quot;&gt;&lt;ol&gt;&lt;li&gt;&lt;span id=&quot;fn:1&quot; class=&quot;footnote-text&quot;&gt;&lt;span&gt;阿巴阿巴&lt;br&gt;&lt;br&gt;[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x2F;&amp;#x2F;&lt;/span&gt;]: &lt;span class=&quot;hljs-comment&quot;&gt;# (注释文本，不会在浏览器中显示。)&lt;/span&gt;&lt;br&gt;&lt;br&gt;[^_^]: &lt;span class=&quot;hljs-comment&quot;&gt;# (注释文本，不会在浏览器中显示。)&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/hexoPostRenderCodeBlock&gt;
-&lt;a href=&quot;#fnref:1&quot; rev=&quot;footnote&quot; class=&quot;footnote-backref&quot;&gt; ↩&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/section&gt;
-</code></pre>
+                <p>本次实验是测量图像中的物体尺寸大小，完成本次实验的关键点是比率指标（pixels_per_metric）。比率指标是给定度量的像素数。为了获取pixels_per_metric，我们得需要找到一个参考物。得到参考物现实中的尺寸大小。从而pixels_per_metric&#x3D;pix(图像中的像素值)&#x2F;width(现实长度)，意为每width的长度有pix个像素，从而在得到其他被测物的像素值后除以pixels_per_metric&#x3D;pix便能测出其尺寸。</p>
+<p>实现过程:</p>
+<blockquote>
+<ol>
+<li>首先是将参考物的图片（用的是0.995英寸的美元）放在被测物的图片上合成一张新图<br><img src="/img/%E7%BE%8E%E5%85%83.png" srcset="/img/loading.gif" lazyload alt="美元"><img src="/img/%E8%A2%AB%E6%B5%8B%E7%89%A9.png" srcset="/img/loading.gif" lazyload alt="被测物"><br>合成结果:<br><img src="/img/%E8%A2%AB%E6%B5%8B%E7%89%A9.png" srcset="/img/loading.gif" lazyload alt="合成图"><br>代码实现:</li>
+</ol>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs python">coin_img=cv2.imread(<span class="hljs-string">&quot;meiyuan1.jpg&quot;</span>,flags=<span class="hljs-number">1</span>)<br>img=cv2.imread(<span class="hljs-string">&quot;mea.jpg&quot;</span>,flags=<span class="hljs-number">1</span>)<br>coin_img=cv2.resize(coin_img,(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>),<span class="hljs-literal">None</span>,<span class="hljs-number">0.18</span>,<span class="hljs-number">0.18</span>)<br>img=cv2.resize(img,(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>),<span class="hljs-literal">None</span>,<span class="hljs-number">0.2</span>,<span class="hljs-number">0.2</span>)<br>h,w=img.shape[:<span class="hljs-number">2</span>]<br>h1,w1=coin_img.shape[:<span class="hljs-number">2</span>]<br><span class="hljs-comment">#合成图片</span><br>imageROI = np.ones((<span class="hljs-number">92</span>, <span class="hljs-number">94</span>, <span class="hljs-number">3</span>))<br>imageROI = coin_img[<span class="hljs-number">0</span>:<span class="hljs-number">92</span>, <span class="hljs-number">0</span>: <span class="hljs-number">94</span>]<br>img[<span class="hljs-number">10</span>:<span class="hljs-number">102</span>, <span class="hljs-number">10</span>:<span class="hljs-number">104</span>]=imageROI<br>cv2.imshow(<span class="hljs-string">&quot;img&quot;</span>,img)<br><br>cv2.waitKey(<span class="hljs-number">0</span>)<br>cv2.destroyAllWindows()<br></code></pre></td></tr></table></figure>
+<blockquote>
+<ol start="2">
+<li>接下来是对图像预处理：通过高斯滤波，canny边缘检测，腐蚀和膨胀来获得图像的边缘信息，方便下一步获取轮廓<br>**高斯模糊  <img src="/img/%E9%AB%98%E6%96%AF.png" srcset="/img/loading.gif" lazyload alt="高斯"><br>**边缘检测<img src="/img/%E8%BE%B9%E7%BC%98.png" srcset="/img/loading.gif" lazyload alt="边缘"><br>**腐蚀和膨胀<img src="/img/%E8%86%A8%E8%83%80%E5%92%8C%E8%85%90%E8%9A%80.png" srcset="/img/loading.gif" lazyload alt="膨胀和腐蚀"><br>代码:</li>
+</ol>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">photopretreatment</span>(<span class="hljs-params">image,SHOWerode=<span class="hljs-literal">False</span></span>):<br>    image=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)<br><br>    gaussian=cv2.GaussianBlur(image,(<span class="hljs-number">7</span>,<span class="hljs-number">7</span>),<span class="hljs-number">0</span>)<br>    <span class="hljs-comment">#cv2.imshow(&quot;g&quot;,gaussian)</span><br>    canny=cv2.Canny(gaussian,<span class="hljs-number">50</span>,<span class="hljs-number">100</span>)<br>    <span class="hljs-comment">#cv2.imshow(&quot;g&quot;,canny)</span><br>    dilate=cv2.dilate(canny,<span class="hljs-literal">None</span>,iterations=<span class="hljs-number">1</span>)<br>    erode = cv2.erode(dilate,<span class="hljs-literal">None</span>, iterations=<span class="hljs-number">1</span>)<br>    <span class="hljs-keyword">if</span> SHOWerode:cv2.imshow(<span class="hljs-string">&quot;erode&quot;</span>,erode)<br>    <span class="hljs-keyword">return</span> erode<br></code></pre></td></tr></table></figure>
+<blockquote>
+<ol start="3">
+<li>下一步是通过cv2.findcontours()函数得到轮廓点和轮廓个数与层次关系则需要imutils.grab_contours()函数来抓取其中的轮廓，接下来就需要对轮廓进行排序从上到下从左到右（使用contours.sort_contours()函数），因为我们需要先对参考物进行测量得到pixels_per_metric后再对被测物测量。</li>
+</ol>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#找轮廓并排序</span><br>cnts=cv2.findContours(img1.copy(),cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)<br>cnts=imutils.grab_contours(cnts)<span class="hljs-comment">#抓住轮廓</span><br>(cnts,_)=contours.sort_contours(cnts)<span class="hljs-comment">#轮廓排序</span><br><br><span class="hljs-comment">#定义pixpermectic</span><br>pixelsPerMetric = <span class="hljs-literal">None</span><br>width = <span class="hljs-number">0.955</span><br>```  <br><br>&gt; <span class="hljs-number">4.</span> 下一步是遍历轮廓，对物品画出其最小外界矩形。其中对于因噪声产生的轮廓通过cv2.contoursArea（）滤除，接着由于在之前cv2.findcontours()函数中第三个参数metho选的是cv2.CHAIN_APPROX_SIMPLE因此得到的轮廓是压缩水平和垂直的端点值，通过画出外接最小矩形后得到矩形的<span class="hljs-number">4</span>个顶点值，通过顶点画出轮廓<br>![轮廓<span class="hljs-number">1</span>](/img/轮廓<span class="hljs-number">1.</span>png)   <br>![轮廓<span class="hljs-number">2</span>](/img/轮廓<span class="hljs-number">2.</span>png)  <br>&gt;  ** 代码实现<br>```python<br><span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> cnts:<br>    <span class="hljs-keyword">if</span> cv2.contourArea(c)&lt;<span class="hljs-number">100</span>:<br>        <span class="hljs-keyword">continue</span><br>    orig=img<br>    box=cv2.minAreaRect(c)<br>    box=cv2.boxPoints(box)<br>    box=np.array(box,dtype=<span class="hljs-string">&quot;int&quot;</span>)<br>    box=perspective.order_points(box)<br>    cv2.drawContours(orig,[box.astype(<span class="hljs-string">&quot;int&quot;</span>)],-<span class="hljs-number">1</span>,(<span class="hljs-number">0</span>,<span class="hljs-number">255</span>,<span class="hljs-number">0</span>),<span class="hljs-number">2</span>)<br><br>    <span class="hljs-comment">#给4个点画圈</span><br>    <span class="hljs-keyword">for</span> (x,y) <span class="hljs-keyword">in</span> box:<br>        cv2.circle(orig,(<span class="hljs-built_in">int</span>(x),<span class="hljs-built_in">int</span>(y)),<span class="hljs-number">5</span>,(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">255</span>),<span class="hljs-number">2</span>)<br></code></pre></td></tr></table></figure>
+<blockquote>
+<ol start="5">
+<li>接着由得到4个顶点值画出矩形再通过4个点画出各个中点后计算出距离从而得到像素值后除以pixels_per_metric得到测量值。<br><img src="/img/%E8%BD%AE%E5%BB%933.png" srcset="/img/loading.gif" lazyload alt="轮廓3"><br><img src="/img/%E8%BD%AE%E5%BB%934.png" srcset="/img/loading.gif" lazyload alt="轮廓4"><br>** 代码实现：</li>
+</ol>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#由四个角得到长度和宽度计算尺寸</span><br>(tl,tr,br,bl)=box<br>(tcx,tcy)= midpoint(tl,tr)<br>(bcx,bcy) = midpoint(bl,br)<br>(lcx,lcy)= midpoint(tl,bl)<br>(rcx,rcy)= midpoint(tr,br)<br><br>cv2.circle(orig, (<span class="hljs-built_in">int</span>(tcx),<span class="hljs-built_in">int</span>(tcy)), <span class="hljs-number">5</span>, (<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">255</span>), <span class="hljs-number">2</span>)<br>cv2.circle(orig, (<span class="hljs-built_in">int</span>(bcx),<span class="hljs-built_in">int</span>(bcy)), <span class="hljs-number">5</span>, (<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">255</span>), <span class="hljs-number">2</span>)<br>cv2.circle(orig, (<span class="hljs-built_in">int</span>(lcx),<span class="hljs-built_in">int</span>(lcy)), <span class="hljs-number">5</span>, (<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">255</span>), <span class="hljs-number">2</span>)<br>cv2.circle(orig, (<span class="hljs-built_in">int</span>(rcx),<span class="hljs-built_in">int</span>(rcy)), <span class="hljs-number">5</span>, (<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">255</span>), <span class="hljs-number">2</span>)<br><br>cv2.line(orig,(<span class="hljs-built_in">int</span>(tcx),<span class="hljs-built_in">int</span>(tcy)),(<span class="hljs-built_in">int</span>(bcx),<span class="hljs-built_in">int</span>(bcy)),(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">255</span>),<span class="hljs-number">3</span>)<br>cv2.line(orig, (<span class="hljs-built_in">int</span>(lcx),<span class="hljs-built_in">int</span>(lcy)), (<span class="hljs-built_in">int</span>(rcx),<span class="hljs-built_in">int</span>(rcy)), (<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">255</span>), <span class="hljs-number">3</span>)<br></code></pre></td></tr></table></figure>
+<blockquote>
+<p>另一张是以橡皮为参考物的测量<br><img src="/img/%E8%BD%AE%E5%BB%935.png" srcset="/img/loading.gif" lazyload alt="轮廓5"><br><img src="/img/%E8%BD%AE%E5%BB%936.png" srcset="/img/loading.gif" lazyload alt="轮廓6">  </p>
+</blockquote>
 
                 
               </div>
@@ -360,13 +322,6 @@
               <div class="post-metas my-3">
   
   
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/%E4%B8%80%E4%B8%AA%E6%A0%87%E7%AD%BE/">#一个标签</a>
-      
-    </div>
-  
 </div>
 
 
@@ -375,8 +330,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Markdown</div>
-      <div>https://bbbblazar.github.io/2023/06/21/Markdown/</div>
+      <div>尺寸检测</div>
+      <div>https://bbbblazar.github.io/2023/06/24/尺寸检测/</div>
     </div>
     <div class="license-meta">
       
@@ -388,7 +343,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年6月21日</div>
+          <div>2023年6月24日</div>
         </div>
       
       
@@ -420,9 +375,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/06/23/opencv%E8%BD%A6%E9%81%93%E7%BA%BF%E6%A3%80%E6%B5%8B/" title="车道线检测">
+                      <a href="/2023/06/25/minist%E6%89%8B%E5%86%99%E8%AF%86%E5%88%AB/" title="minist手写识别">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">车道线检测</span>
+                        <span class="hidden-mobile">minist手写识别</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -430,8 +385,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/06/21/Markdown%E5%AE%9E%E4%BE%8B/" title="Markdown实例">
-                        <span class="hidden-mobile">Markdown实例</span>
+                      <a href="/2023/06/23/opencv%E8%BD%A6%E9%81%93%E7%BA%BF%E6%A3%80%E6%B5%8B/" title="车道线检测">
+                        <span class="hidden-mobile">车道线检测</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

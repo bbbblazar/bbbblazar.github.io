@@ -16,22 +16,38 @@
   <meta name="author" content="cjj">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Markdown 标题下面是使用Markdown设置标题(几号标题) 123456# 一级（注意#后面要有空格）## 二级### 三级#### 四级##### 五级###### 六级    Markdown 段落换行进行段落的换行操作有 1.进行两次换行2.空格2次再换行 Markdown 字体如下所示:  1234567891011121314151617181920212223*斜体文本*--">
+    <meta name="description" content="本次任务是在第五周手写识别的基础上完成上一周10类杂草的识别，实现方式都一样，通过神经网络（CNN模型）来完成识别首先是制作10类杂草的数据集第一步在获取了500张以上的杂草后，由于每张杂草图片大小都不一样，还有一些图片上不是我们训练中所需要的部分，所以为了获取我们所感兴趣的部分我们需要python中的pillow来裁剪这些图片，制作数据集。第一步:在图上估计获取感兴趣区域的大小   12345#">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown">
-<meta property="og:url" content="https://bbbblazar.github.io/2023/06/21/Markdown/index.html">
+<meta property="og:title" content="杂草识别">
+<meta property="og:url" content="https://bbbblazar.github.io/2023/06/25/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB/index.html">
 <meta property="og:site_name" content="bbblazar_blog">
-<meta property="og:description" content="Markdown 标题下面是使用Markdown设置标题(几号标题) 123456# 一级（注意#后面要有空格）## 二级### 三级#### 四级##### 五级###### 六级    Markdown 段落换行进行段落的换行操作有 1.进行两次换行2.空格2次再换行 Markdown 字体如下所示:  1234567891011121314151617181920212223*斜体文本*--">
+<meta property="og:description" content="本次任务是在第五周手写识别的基础上完成上一周10类杂草的识别，实现方式都一样，通过神经网络（CNN模型）来完成识别首先是制作10类杂草的数据集第一步在获取了500张以上的杂草后，由于每张杂草图片大小都不一样，还有一些图片上不是我们训练中所需要的部分，所以为了获取我们所感兴趣的部分我们需要python中的pillow来裁剪这些图片，制作数据集。第一步:在图上估计获取感兴趣区域的大小   12345#">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-06-21T07:06:53.000Z">
-<meta property="article:modified_time" content="2023-06-21T17:38:06.800Z">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB1.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB2.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB3.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB7.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB8.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB9.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB10.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB11.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB12.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB13.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB14.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB15.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB16.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB17.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB18.png">
+<meta property="og:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB19.png">
+<meta property="article:published_time" content="2023-06-25T07:40:17.000Z">
+<meta property="article:modified_time" content="2023-06-25T08:06:09.584Z">
 <meta property="article:author" content="cjj">
-<meta property="article:tag" content="一个标签">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bbbblazar.github.io/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB1.png">
   
   
   
-  <title>Markdown - bbblazar_blog</title>
+  <title>杂草识别 - bbblazar_blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +213,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Markdown"></span>
+            <span id="subtitle" data-typed-text="杂草识别"></span>
           
         </div>
 
@@ -208,8 +224,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-06-21 15:06" pubdate>
-          2023年6月21日 下午
+        <time datetime="2023-06-25 15:40" pubdate>
+          2023年6月25日 下午
         </time>
       </span>
     
@@ -220,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.2k 字
+          2.3k 字
         
       </span>
     
@@ -231,7 +247,7 @@
         
         
         
-          19 分钟
+          20 分钟
         
       </span>
     
@@ -269,88 +285,17 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Markdown</h1>
+            <h1 style="display: none">杂草识别</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Markdown-标题"><a href="#Markdown-标题" class="headerlink" title="Markdown 标题"></a>Markdown 标题</h1><p>下面是使用Markdown设置标题(几号标题)</p>
-<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs clean"># 一级（注意#后面要有空格）<br>## 二级<br>### 三级<br>#### 四级<br>##### 五级<br>###### 六级<br></code></pre></td></tr></table></figure>
-
-
-
-<h1 id="Markdown-段落"><a href="#Markdown-段落" class="headerlink" title="Markdown 段落"></a>Markdown 段落</h1><h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><p>进行段落的换行操作有</p>
-<p>1.进行两次换行<br>2.空格2次再换行</p>
-<h2 id="Markdown-字体"><a href="#Markdown-字体" class="headerlink" title="Markdown 字体"></a>Markdown 字体</h2><p>如下所示: </p>
-<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli">*斜体文本*<span class="hljs-params">-----------</span>（一个*号是斜体）<br><br>_斜体文本_<span class="hljs-params">-----------</span>（一个下划是斜体）<br><br>**粗体文本**<span class="hljs-params">---------</span>（两个*号是粗体）<br><br>__粗体文本__<span class="hljs-params">---------</span>（两个下划是粗体）<br><br>***粗斜体文本***<span class="hljs-params">-----</span>（三个*号是粗斜）<br><br>___粗斜体文本___<span class="hljs-params">-----</span>（三个下划是粗斜）<br><br>~~删除线文本~~<span class="hljs-params">-------</span>（两个波浪是删除）<br><br>&lt;u&gt;下划线文本&lt;<span class="hljs-string">/u</span>&gt;<span class="hljs-params">----</span>（一个u符是下划）<br><br>创建一个脚注<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="阿巴阿巴[//]: # (注释文本，不会在浏览器中显示。)[^_^]: # (注释文本，不会在浏览器中显示。)">[1]</span></a></sup><br><br>
-
-
-# Markdown 列表
-
-
-共有三种列表
-
-
-
-
-## 有序列表
-
-
-
-就是用数字加.的方式
-
-
-
-<hexoPostRenderCodeBlock><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">1.</span> 这样<br><span class="hljs-bullet">2.</span> 表示<br><span class="hljs-bullet">3.</span> .是在英文输入法下且之后内容前有个空格<br></code></pre></td></tr></table></figure>
-
-
-
-<h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><p>使用了+（加号），-（减号），<em>（</em>号）；</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">*</span> 听话的便当<br><br><span class="hljs-bullet">*</span> 听话的便当<br><br><span class="hljs-bullet">*</span> 听话的便当<br><br><span class="hljs-bullet">+</span> 注意<br><br><span class="hljs-bullet">+</span> 注意<br><br><span class="hljs-bullet">+</span> 注意<br><br><span class="hljs-bullet">-</span> 符号后加空格<br><br><span class="hljs-bullet">-</span> 符号后加空格<br><br><span class="hljs-bullet">-</span> 符号后加空格<br></code></pre></td></tr></table></figure>
-
-
-<p>输出为：一个点加内容</p>
-<h2 id="嵌套列表"><a href="#嵌套列表" class="headerlink" title="嵌套列表"></a>嵌套列表</h2><h3 id="有序嵌套列表"><a href="#有序嵌套列表" class="headerlink" title="有序嵌套列表"></a>有序嵌套列表</h3><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs 1c"><span class="hljs-number">1</span>. 听话的便当<br>    - 听话的便当<br>    - 听话的便当<br><span class="hljs-number">2</span>. 注意空格<br>    + 空格<br>    + 空格<br><span class="hljs-number">3</span>. <span class="hljs-string">&quot;-&quot;</span>，<span class="hljs-string">&quot;*&quot;</span>和<span class="hljs-string">&quot;+&quot;</span>前面有四个空格<br>    * <span class="hljs-string">&quot;-&quot;</span>，<span class="hljs-string">&quot;*&quot;</span>和<span class="hljs-string">&quot;+&quot;</span>前面有四个空格<br>    * <span class="hljs-string">&quot;-&quot;</span>，<span class="hljs-string">&quot;*&quot;</span>和<span class="hljs-string">&quot;+&quot;</span>前面有四个空格<br></code></pre></td></tr></table></figure>
-
-
-
-<h3 id="无序嵌套列表"><a href="#无序嵌套列表" class="headerlink" title="无序嵌套列表"></a>无序嵌套列表</h3><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs 1c">- 就是把数字换成符号<br>    - 就是把数字换成符号<br>    - 就是把数字换成符号<br>+ 注意空格<br>    + 空格<br>    + 空格<br>* <span class="hljs-string">&quot;-&quot;</span>，<span class="hljs-string">&quot;*&quot;</span>和<span class="hljs-string">&quot;+&quot;</span>前面有四个空格<br>    * <span class="hljs-string">&quot;-&quot;</span>，<span class="hljs-string">&quot;*&quot;</span>和<span class="hljs-string">&quot;+&quot;</span>前面有四个空格<br>    * <span class="hljs-string">&quot;-&quot;</span>，<span class="hljs-string">&quot;*&quot;</span>和<span class="hljs-string">&quot;+&quot;</span>前面有四个空格<br></code></pre></td></tr></table></figure>
-
-
-
-<h1 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h1><figure class="highlight node-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs node-repl"><span class="hljs-meta prompt_">&gt;</span> <span class="language-javascript">听话的便当</span><br><span class="hljs-meta prompt_">&gt;</span> <span class="language-javascript"><span class="hljs-title class_">Markdown</span></span><br><span class="hljs-meta prompt_">&gt;</span> <span class="language-javascript">区块</span><br></code></pre></td></tr></table></figure>
-
-
-<p>区块里可以使用列表，列表里可以使用区块</p>
-<h1 id="Markdown-代码"><a href="#Markdown-代码" class="headerlink" title="Markdown 代码"></a>Markdown 代码</h1><h1 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h1><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs awk">这是[听话的便当](https:<span class="hljs-regexp">//</span>www/thdbd.gitbook.io)的网站<br><br>或者<br><br>这是听话的便当的网站 &lt;https:<span class="hljs-regexp">//</span>www.thdbd.gitbook.io&gt; <br>[<span class="hljs-regexp">//</span>]: <span class="hljs-comment"># (直接显示链接)</span><br></code></pre></td></tr></table></figure>
-
-<p>或者像论文文献一样</p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs less">这是我的<span class="hljs-selector-attr">[网站]</span><span class="hljs-selector-attr">[1]</span><br><br>这是我的<span class="hljs-selector-attr">[第二个网站]</span><span class="hljs-selector-attr">[2]</span><br><br>······<br><br>这是我的<span class="hljs-selector-attr">[网站]</span><span class="hljs-selector-attr">[1]</span><br><br>这是我的<span class="hljs-selector-attr">[第二个网站]</span><span class="hljs-selector-attr">[2]</span><br><br><span class="hljs-selector-attr">[1]</span>: <span class="hljs-selector-tag">https</span>:<span class="hljs-comment">//www.github.io/</span><br><span class="hljs-selector-attr">[2]</span>: <span class="hljs-selector-tag">https</span>:<span class="hljs-comment">//www.gitbook.io/</span><br></code></pre></td></tr></table></figure>
-
-
-<h1 id="Markdown-表格"><a href="#Markdown-表格" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h1><p>Markdown 表格使用 | 来分隔不同的单元格；<br>使用 - 来分隔表头和其他行；<br>例如：</p>
-<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs gherkin">|<span class="hljs-string">  thdbd  </span>|<span class="hljs-string">  thdbd  </span>|<br>|<span class="hljs-string">  -----  </span>|<span class="hljs-string">  -----  </span>|<br>|<span class="hljs-string">   123   </span>|<span class="hljs-string">   456   </span>|<br>|<span class="hljs-string">   321   </span>|<span class="hljs-string">   654   </span>|<br><br><br>```  <br>也可以设计一下表格内文字的居中方式：<br>-: 设置内容和标题栏居右对齐。<br>:- 设置内容和标题栏居左对齐。<br>:-: 设置内容和标题栏居中对齐。<br><br><br>例如：<br><br><br></code></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th align="center">thdbd</th>
-<th align="center">thdbd</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">123</td>
-<td align="center">456</td>
-</tr>
-<tr>
-<td align="center">321</td>
-<td align="center">654</td>
-</tr>
-</tbody></table>
-<pre><code class="hljs">
-
-&lt;section class=&quot;footnotes&quot;&gt;&lt;div class=&quot;footnote-list&quot;&gt;&lt;ol&gt;&lt;li&gt;&lt;span id=&quot;fn:1&quot; class=&quot;footnote-text&quot;&gt;&lt;span&gt;阿巴阿巴&lt;br&gt;&lt;br&gt;[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x2F;&amp;#x2F;&lt;/span&gt;]: &lt;span class=&quot;hljs-comment&quot;&gt;# (注释文本，不会在浏览器中显示。)&lt;/span&gt;&lt;br&gt;&lt;br&gt;[^_^]: &lt;span class=&quot;hljs-comment&quot;&gt;# (注释文本，不会在浏览器中显示。)&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/hexoPostRenderCodeBlock&gt;
-&lt;a href=&quot;#fnref:1&quot; rev=&quot;footnote&quot; class=&quot;footnote-backref&quot;&gt; ↩&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/section&gt;
-</code></pre>
+                <p>本次任务是在第五周手写识别的基础上完成上一周10类杂草的识别，实现方式都一样，通过神经网络（CNN模型）来完成识别<br>首先是制作10类杂草的数据集<br>第一步在获取了500张以上的杂草后，由于每张杂草图片大小都不一样，还有一些图片上不是我们训练中所需要的部分，所以为了获取我们所感兴趣的部分我们需要python中的pillow来裁剪这些图片，制作数据集。<br>第一步:在图上估计获取感兴趣区域的大小  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#裁剪窗口</span><br>BOX_LEFT, BOX_UP, BOX_RIGHT, BOX_DOWN = <span class="hljs-number">100</span>, <span class="hljs-number">100</span>, <span class="hljs-number">400</span>, <span class="hljs-number">400</span><br>box = (BOX_LEFT, BOX_UP, BOX_RIGHT + BOX_LEFT, BOX_DOWN + BOX_UP)<br><span class="hljs-comment">#裁剪函数</span><br>roi_area = img.crop(box)<br></code></pre></td></tr></table></figure>
+<p><img src="/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB1.png" srcset="/img/loading.gif" lazyload alt="img"><br>下一步就是制作数据集<br>分为测试集，训练集，验证集，训练集和验证集都放着10类杂草的图片，测试集放着训练完后预测的图片<br><img src="/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB2.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB3.png" srcset="/img/loading.gif" lazyload alt="img"><br>完成数据集的准备后，接下来是输入数据集，使用train_generator &#x3D; train_datagen.flow_from_directory(train_directory,target_size&#x3D;image_size,batch_size&#x3D;batch_size,class_mode&#x3D;’categorical’)生成数据。<br>接下来与第五周一样，创建CNN训练模型</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">model_load</span>(<span class="hljs-params">IMG_SHAPE=(<span class="hljs-params"><span class="hljs-number">224</span>, <span class="hljs-number">224</span>, <span class="hljs-number">3</span></span>), class_num=<span class="hljs-number">12</span></span>):<br>    <span class="hljs-comment"># 搭建模型</span><br>    model = tf.keras.models.Sequential([<br>        <span class="hljs-comment"># 对模型做归一化的处理，将0-255之间的数字统一处理到0到1之间</span><br>        tf.keras.layers.experimental.preprocessing.Rescaling(<span class="hljs-number">1.</span> / <span class="hljs-number">255</span>, input_shape=IMG_SHAPE),<br>        <span class="hljs-comment"># 卷积层，该卷积层的输出为32个通道，卷积核的大小是3*3，激活函数为relu</span><br>        tf.keras.layers.Conv2D(<span class="hljs-number">32</span>, (<span class="hljs-number">3</span>, <span class="hljs-number">3</span>), activation=<span class="hljs-string">&#x27;relu&#x27;</span>),<br>        <span class="hljs-comment"># 添加池化层，池化的kernel大小是2*2</span><br>        tf.keras.layers.MaxPooling2D(<span class="hljs-number">2</span>, <span class="hljs-number">2</span>),<br>        <span class="hljs-comment"># Add another convolution</span><br>        <span class="hljs-comment"># 卷积层，输出为64个通道，卷积核大小为3*3，激活函数为relu</span><br>        tf.keras.layers.Conv2D(<span class="hljs-number">64</span>, (<span class="hljs-number">3</span>, <span class="hljs-number">3</span>), activation=<span class="hljs-string">&#x27;relu&#x27;</span>),<br>        <span class="hljs-comment"># 池化层，最大池化，对2*2的区域进行池化操作</span><br>        tf.keras.layers.MaxPooling2D(<span class="hljs-number">2</span>, <span class="hljs-number">2</span>),<br>        <span class="hljs-comment"># 将二维的输出转化为一维</span><br>        tf.keras.layers.Flatten(),<br>        <span class="hljs-comment"># The same 128 dense layers, and 10 output layers as in the pre-convolution example:</span><br>        tf.keras.layers.Dense(<span class="hljs-number">128</span>, activation=<span class="hljs-string">&#x27;relu&#x27;</span>),<br>        <span class="hljs-comment"># 通过softmax函数将模型输出为类名长度的神经元上，激活函数采用softmax对应概率值</span><br>        tf.keras.layers.Dense(class_num, activation=<span class="hljs-string">&#x27;softmax&#x27;</span>)<br>    ])<br>    <span class="hljs-comment"># 输出模型信息</span><br>    model.summary()<br>    <span class="hljs-comment"># 指明模型的训练参数，优化器为sgd优化器，损失函数为交叉熵损失函数</span><br>    model.<span class="hljs-built_in">compile</span>(optimizer=<span class="hljs-string">&#x27;sgd&#x27;</span>, loss=<span class="hljs-string">&#x27;categorical_crossentropy&#x27;</span>, metrics=[<span class="hljs-string">&#x27;accuracy&#x27;</span>])<br>    <span class="hljs-comment"># 返回模型</span><br>    <span class="hljs-keyword">return</span> model<br>```  <br>用model.fit()方法开始训练  <br>训练结果如下所示:  <br>![img](/img/杂草识别<span class="hljs-number">4.</span>png)  <br>准确度到达<span class="hljs-number">0.93</span>  <br>![img](/img/杂草识别<span class="hljs-number">5.</span>png)  <br>![img](/img/杂草识别<span class="hljs-number">6.</span>png)  <br>接下来是对利用训练好的模型对测试集中的<span class="hljs-number">10</span>类杂草图片进行预测<br>代码如下  <br>```python<br>predictions = model.predict(test_image)<br>class_names = [<span class="hljs-string">&#x27;Clinopodium polycephalum&#x27;</span>, <span class="hljs-string">&#x27;Duchesnea indica&#x27;</span>, <span class="hljs-string">&#x27;Eleusine indica&#x27;</span>, <span class="hljs-string">&#x27;Equisetum ramosissimum&#x27;</span>, <span class="hljs-string">&#x27;Lamium amplexicaule&#x27;</span>, <span class="hljs-string">&#x27;Phragmites australis&#x27;</span>, <span class="hljs-string">&#x27;Setaria viridis&#x27;</span>, <span class="hljs-string">&#x27;Taraxacum mongolicum&#x27;</span>, <span class="hljs-string">&#x27;Typha orientalis&#x27;</span>, <span class="hljs-string">&#x27;Xanthium strumarium&#x27;</span>] <span class="hljs-comment"># 类别名称</span><br>predicted_class = class_names[<span class="hljs-built_in">int</span>(predictions[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>])]<br><span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;这个杂草是: <span class="hljs-subst">&#123;predicted_class&#125;</span>&quot;</span>)<br><br></code></pre></td></tr></table></figure>
+<p>结果如下:<br><img src="/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB7.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB8.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB9.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB10.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB11.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB12.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB13.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB14.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB15.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB16.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB17.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB18.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/img/%E6%9D%82%E8%8D%89%E8%AF%86%E5%88%AB19.png" srcset="/img/loading.gif" lazyload alt="img">  </p>
+<p>以上就是全部内容 </p>
 
                 
               </div>
@@ -360,13 +305,6 @@
               <div class="post-metas my-3">
   
   
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/%E4%B8%80%E4%B8%AA%E6%A0%87%E7%AD%BE/">#一个标签</a>
-      
-    </div>
-  
 </div>
 
 
@@ -375,8 +313,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Markdown</div>
-      <div>https://bbbblazar.github.io/2023/06/21/Markdown/</div>
+      <div>杂草识别</div>
+      <div>https://bbbblazar.github.io/2023/06/25/杂草识别/</div>
     </div>
     <div class="license-meta">
       
@@ -388,7 +326,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年6月21日</div>
+          <div>2023年6月25日</div>
         </div>
       
       
@@ -420,18 +358,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/06/23/opencv%E8%BD%A6%E9%81%93%E7%BA%BF%E6%A3%80%E6%B5%8B/" title="车道线检测">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">车道线检测</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/06/21/Markdown%E5%AE%9E%E4%BE%8B/" title="Markdown实例">
-                        <span class="hidden-mobile">Markdown实例</span>
+                      <a href="/2023/06/25/%E7%88%AC%E8%99%AB%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87/" title="爬虫爬取图片">
+                        <span class="hidden-mobile">爬虫爬取图片</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
