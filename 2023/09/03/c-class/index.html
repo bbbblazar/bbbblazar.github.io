@@ -16,21 +16,21 @@
   <meta name="author" content="cjj">
   <meta name="keywords" content="">
   
-    <meta name="description" content="枚举 枚举的定义enum 枚举名{枚举元素1，枚举元素2};在“枚举”类型的定义中列举出所有可能的取值，被说明为该“枚举”类型的变量取值不能超过定义的范围枚举元素列表中,每个元素只能是整型，如果不指定某个元素的大小那么默认是从0开始12345678910111213141516171819202122232425#define _CRT_SECURE_NO_WARNINGS 1#include &amp;">
+    <meta name="description" content="封装意义访问权限类封装是把属性和行为放在不同的权限下:    public 公共权限  （类内可以访问，类外可以访问） protected 保护权限 （类内可以访问，类外不能访问,儿子可以访问父亲中的保护内容） private 私有权限 （类内可以访问，类外不能访问,儿子不可以访问父亲中的私有内容）1234567891011class Penson&amp;#123;public:string m_Nna">
 <meta property="og:type" content="article">
-<meta property="og:title" content="枚举，宏，多文件">
-<meta property="og:url" content="https://bbbblazar.github.io/2023/07/09/%E6%9E%9A%E4%B8%BE%EF%BC%8C%E5%AE%8F%EF%BC%8C%E5%A4%9A%E6%96%87%E4%BB%B6/index.html">
+<meta property="og:title" content="c++ class">
+<meta property="og:url" content="https://bbbblazar.github.io/2023/09/03/c-class/index.html">
 <meta property="og:site_name" content="bbblazar_blog">
-<meta property="og:description" content="枚举 枚举的定义enum 枚举名{枚举元素1，枚举元素2};在“枚举”类型的定义中列举出所有可能的取值，被说明为该“枚举”类型的变量取值不能超过定义的范围枚举元素列表中,每个元素只能是整型，如果不指定某个元素的大小那么默认是从0开始12345678910111213141516171819202122232425#define _CRT_SECURE_NO_WARNINGS 1#include &amp;">
+<meta property="og:description" content="封装意义访问权限类封装是把属性和行为放在不同的权限下:    public 公共权限  （类内可以访问，类外可以访问） protected 保护权限 （类内可以访问，类外不能访问,儿子可以访问父亲中的保护内容） private 私有权限 （类内可以访问，类外不能访问,儿子不可以访问父亲中的私有内容）1234567891011class Penson&amp;#123;public:string m_Nna">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-07-09T11:57:58.000Z">
-<meta property="article:modified_time" content="2023-07-10T15:30:26.749Z">
+<meta property="article:published_time" content="2023-09-03T03:01:58.000Z">
+<meta property="article:modified_time" content="2023-09-08T15:36:58.786Z">
 <meta property="article:author" content="cjj">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>枚举，宏，多文件 - bbblazar_blog</title>
+  <title>c++ class - bbblazar_blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="枚举，宏，多文件"></span>
+            <span id="subtitle" data-typed-text="c++ class"></span>
           
         </div>
 
@@ -207,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-09 19:57" pubdate>
-          2023年7月9日 晚上
+        <time datetime="2023-09-03 11:01" pubdate>
+          2023年9月3日 上午
         </time>
       </span>
     
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.1k 字
+          440 字
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          18 分钟
+          4 分钟
         
       </span>
     
@@ -268,81 +268,31 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">枚举，宏，多文件</h1>
+            <h1 style="display: none">c++ class</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h1><ul>
-<li>枚举的定义<br>enum 枚举名{枚举元素1，枚举元素2};<br>在“枚举”类型的定义中列举出所有可能的取值，被说明为该“枚举”类型的变量取值不能超过定义的范围<br>枚举元素列表中,每个元素只能是整型，如果不指定某个元素的大小那么默认是从0开始<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">define</span> _CRT_SECURE_NO_WARNINGS 1</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">color</span>&#123;</span>red,yellow,green,blue,black&#125;;<br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>    <span class="hljs-type">char</span> get_color;<br>    <br>    <span class="hljs-comment">//printf(&quot;%d\n&quot;,red);</span><br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;input the color:&quot;</span>);<br>    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;get_color);<br>   <br>    <span class="hljs-keyword">switch</span> (get_color)<br>    &#123;<br>    <span class="hljs-keyword">case</span> red:<br>        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;it is red&quot;</span>);<br>        <span class="hljs-keyword">break</span>;<br>    <br>    <span class="hljs-keyword">default</span>:<br>        <span class="hljs-keyword">break</span>;<br>    &#125;<br>    <br>    <br>    <br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure></li>
-<li>用typedef关键字将枚举类型定义别名，并用别名进行变量申明<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">workday</span>&#123;</span><br>    saturday,<br>    sunday,<br>    monday,<br>    tuesday,<br>    wednesday,<br>    thursday,<br>    friday,<br>&#125;workday<br>workday today;<br></code></pre></td></tr></table></figure>
-在stm32开发库中用枚举方法非常多<br>如:<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">enum</span></span><br><span class="hljs-class">&#123;</span><br>    LED1=<span class="hljs-number">0</span>,<br>    LED2=<span class="hljs-number">1</span>,<br>    LED3=<span class="hljs-number">2</span>,<br>    LED4=<span class="hljs-number">3</span>,<br>&#125;LED_typedef;<br></code></pre></td></tr></table></figure></li>
-</ul>
-<h1 id="typedef关键字"><a href="#typedef关键字" class="headerlink" title="typedef关键字"></a>typedef关键字</h1><p>能够让用户自己为数据类型取别名(起外号)，作用是减少声明错误<br>定义格式:<br>typedef 原类型名 新类型名;<br>如：<br>typedef int ZHENGXING;<br>ZHENGXING a&#x3D; 10;&#x2F;&#x2F;等价于int a&#x3D;10</p>
-<ul>
-<li>给一个已经存在的的类型取别名的技巧</li>
-</ul>
+                <h1 id="封装意义"><a href="#封装意义" class="headerlink" title="封装意义"></a>封装意义</h1><h2 id="访问权限"><a href="#访问权限" class="headerlink" title="访问权限"></a>访问权限</h2><p>类封装是把属性和行为放在不同的权限下:  </p>
 <ol>
-<li>为基本类型取别名<br>typedef int ZX；</li>
-<li>为数去类型取别名<br>typedef char NAME[20];<br>表示:<br>NAME是字符数组类型，数组长度为20<br>然后可用NAME 定义变量，如:<br>NAME a1,a2,s1,s2;<br>char a1[20], a2[20], s1[20], s2[20];  </li>
-<li>结构体类型</li>
+<li>public 公共权限  （类内可以访问，类外可以访问）</li>
+<li>protected 保护权限 （类内可以访问，类外不能访问,儿子可以访问父亲中的保护内容）</li>
+<li>private 私有权限 （类内可以访问，类外不能访问,儿子不可以访问父亲中的私有内容）<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Penson</span><br>&#123;<br><span class="hljs-keyword">public</span>:<br>string m_Nname;<span class="hljs-comment">//姓名</span><br><br><span class="hljs-keyword">protected</span>:<br>string m_Car;<span class="hljs-comment">//汽车</span><br><br><span class="hljs-keyword">private</span>:<br><span class="hljs-type">int</span> m_Password;<span class="hljs-comment">//银行密码</span><br>&#125;;<br></code></pre></td></tr></table></figure></li>
 </ol>
+<h2 id="struct和class区别"><a href="#struct和class区别" class="headerlink" title="struct和class区别"></a>struct和class区别</h2><p>区别是默认的访问权限不同  </p>
 <ul>
-<li>第1种<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Person</span>&#123;</span><br>    <span class="hljs-type">int</span> age;<br>    <span class="hljs-type">char</span> *name; <br>&#125; PersonType;<br></code></pre></td></tr></table></figure></li>
-<li>第2种   <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">struct</span>&#123;</span><br>    <span class="hljs-type">int</span> year;<br>    <span class="hljs-type">int</span> month;<br>    <span class="hljs-type">int</span> day;<br>&#125; Date;<br></code></pre></td></tr></table></figure></li>
-<li>第3种<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Person</span> <span class="hljs-title">PersonType</span>;</span><br></code></pre></td></tr></table></figure></li>
+<li>struct 默认权限为公共</li>
+<li>class 默认权限为私有</li>
 </ul>
-<ol start="4">
-<li>枚举类型</li>
-</ol>
-<ul>
-<li>第1种<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Sex</span>&#123;</span> SexMan, SexWoman, SexOther &#125;; <br><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Sex</span> <span class="hljs-title">SexType</span>;</span><br></code></pre></td></tr></table></figure></li>
-<li>第2种<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">enum</span> _<span class="hljs-title">Sex</span>&#123;</span> SexMan, SexWoman, SexOther &#125; Sex; <br>Sex sex = SexOther;<br></code></pre></td></tr></table></figure></li>
-<li>第3种<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">enum</span>&#123;</span> ColorRed, ColorBule, ColorGreen, ColorYellow&#125; Color;<br>Color color = ColorGreen;<br></code></pre></td></tr></table></figure></li>
-</ul>
-<ol start="5">
-<li>函数指针取别名<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-comment">// 给指针函数起别名</span><br><span class="hljs-keyword">typedef</span> <span class="hljs-title function_">int</span> <span class="hljs-params">(*FUN)</span><span class="hljs-params">(<span class="hljs-type">int</span>, <span class="hljs-type">int</span>)</span>;<br><span class="hljs-comment">// 用别名定义两个指针变量 </span><br>FUN f1,f2;<br><span class="hljs-comment">// 给函数指针初始化 </span><br>f1 = sum;  <span class="hljs-comment">// sum是1个函数的名字</span><br><span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d\n&quot;</span>,f1(<span class="hljs-number">12</span>,<span class="hljs-number">34</span>));<br></code></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="define宏"><a href="#define宏" class="headerlink" title="define宏"></a>define宏</h1><p>预处理（预编译）<br>源代码在编译成机器指令之前要进行预处理</p>
-<p>预处理阶段可以根据预处理指令，(以#开头)执行 一些列操作</p>
-<p>预处理可以在编译之前处理及修改C 源代码</p>
-<p>完成预处理阶段，并分析及执行了所有的预处理指令之后，这些指令就不再出现在源代码中</p>
-<p>如#include 和 #define 指令</p>
-<h2 id="宏的概念"><a href="#宏的概念" class="headerlink" title="宏的概念"></a>宏的概念</h2><p>宏可以分为有参宏和无参宏</p>
+<h2 id="成员属性设置为私有"><a href="#成员属性设置为私有" class="headerlink" title="成员属性设置为私有"></a>成员属性设置为私有</h2><p>优点1：将所有</p>
+<h3 id="练习案例-（点和圆的关系）"><a href="#练习案例-（点和圆的关系）" class="headerlink" title="练习案例 （点和圆的关系）"></a>练习案例 （点和圆的关系）</h3><p>与圆的半径比较(使用欧拉公式)</p>
 <ol>
-<li>无参宏<br>假如程序中是使用某个数值多次，当需要修改的时候，需要花费很大的力气去进行修改；但是如果采用宏则很方便的解决这个问题</li>
+<li>圆上</li>
+<li>圆外</li>
+<li>圆内</li>
 </ol>
-<ul>
-<li>使用注意事项<ul>
-<li>习惯上宏名也是标示符，建议用大写字母表示，以便与变量区别</li>
-<li>字符串可以是常量，表达式，格式串，数据类型等，无论写什么都会原封不动的替换掉</li>
-<li>无分号，宏定义是指令，所以末尾不加分号定义位置</li>
-</ul>
-</li>
-<li>作用阈<ul>
-<li>定义必须写在函数外面，作用域为宏定义命令到源程序结束</li>
-<li>终止作用域可以使用#undef命令</li>
-<li>宏可以嵌套定义</li>
-</ul>
-</li>
-</ul>
-<ol start="2">
-<li>有参宏</li>
-</ol>
-<ul>
-<li>使用注意事项<ul>
-<li>定义符合规范 : 形参之间可以出现空格，但是宏名和形参表之间不能有空格出现</li>
-<li>形参只是简单的符号代换，不需要分配内存空间，不存在值传递问题</li>
-<li>通常加括号( )利于代码的可读性</li>
-<li>字符串可以放多个语句</li>
-</ul>
-</li>
-</ul>
-<h1 id="include指令"><a href="#include指令" class="headerlink" title="#include指令"></a>#include指令</h1><ol>
-<li>#include “ “ 意义是包含一个用户定义的文件，可以是头文件，也可是普通文件</li>
-<li>#include &lt;&gt; 意义是包含一个系统(编译器自带)的头文件</li>
-</ol>
-
+<p>关键点：在一个类中可以让；另一个类作为成员,对于开发不能把很多类写在一个文件中,头文件写声明，源文件写实现</p>
+<h2 id="对象的初始化和清理"><a href="#对象的初始化和清理" class="headerlink" title="对象的初始化和清理"></a>对象的初始化和清理</h2><h3 id="构造函数和析构函数-分别解决初始化和清理两个问题"><a href="#构造函数和析构函数-分别解决初始化和清理两个问题" class="headerlink" title="构造函数和析构函数(分别解决初始化和清理两个问题)"></a>构造函数和析构函数(分别解决初始化和清理两个问题)</h3>
                 
               </div>
             
@@ -359,8 +309,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>枚举，宏，多文件</div>
-      <div>https://bbbblazar.github.io/2023/07/09/枚举，宏，多文件/</div>
+      <div>c++ class</div>
+      <div>https://bbbblazar.github.io/2023/09/03/c-class/</div>
     </div>
     <div class="license-meta">
       
@@ -372,7 +322,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年7月9日</div>
+          <div>2023年9月3日</div>
         </div>
       
       
@@ -404,9 +354,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/09/03/c-class/" title="c++ class">
+                      <a href="/2023/10/22/20231022/" title="">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">c++ class</span>
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -414,8 +364,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/09/struct%E7%BB%93%E6%9E%84%E4%BD%93/" title="struct结构体">
-                        <span class="hidden-mobile">struct结构体</span>
+                      <a href="/2023/07/09/%E6%9E%9A%E4%B8%BE%EF%BC%8C%E5%AE%8F%EF%BC%8C%E5%A4%9A%E6%96%87%E4%BB%B6/" title="枚举，宏，多文件">
+                        <span class="hidden-mobile">枚举，宏，多文件</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

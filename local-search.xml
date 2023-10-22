@@ -4,6 +4,32 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2023/10/22/20231022/"/>
+    <url>/2023/10/22/20231022/</url>
+    
+    <content type="html"><![CDATA[<h1 id="bad-mood"><a href="#bad-mood" class="headerlink" title="bad mood"></a>bad mood</h1>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>c++ class</title>
+    <link href="/2023/09/03/c-class/"/>
+    <url>/2023/09/03/c-class/</url>
+    
+    <content type="html"><![CDATA[<h1 id="封装意义"><a href="#封装意义" class="headerlink" title="封装意义"></a>封装意义</h1><h2 id="访问权限"><a href="#访问权限" class="headerlink" title="访问权限"></a>访问权限</h2><p>类封装是把属性和行为放在不同的权限下:  </p><ol><li>public 公共权限  （类内可以访问，类外可以访问）</li><li>protected 保护权限 （类内可以访问，类外不能访问,儿子可以访问父亲中的保护内容）</li><li>private 私有权限 （类内可以访问，类外不能访问,儿子不可以访问父亲中的私有内容）<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Penson</span><br>&#123;<br><span class="hljs-keyword">public</span>:<br>string m_Nname;<span class="hljs-comment">//姓名</span><br><br><span class="hljs-keyword">protected</span>:<br>string m_Car;<span class="hljs-comment">//汽车</span><br><br><span class="hljs-keyword">private</span>:<br><span class="hljs-type">int</span> m_Password;<span class="hljs-comment">//银行密码</span><br>&#125;;<br></code></pre></td></tr></table></figure></li></ol><h2 id="struct和class区别"><a href="#struct和class区别" class="headerlink" title="struct和class区别"></a>struct和class区别</h2><p>区别是默认的访问权限不同  </p><ul><li>struct 默认权限为公共</li><li>class 默认权限为私有</li></ul><h2 id="成员属性设置为私有"><a href="#成员属性设置为私有" class="headerlink" title="成员属性设置为私有"></a>成员属性设置为私有</h2><p>优点1：将所有</p><h3 id="练习案例-（点和圆的关系）"><a href="#练习案例-（点和圆的关系）" class="headerlink" title="练习案例 （点和圆的关系）"></a>练习案例 （点和圆的关系）</h3><p>与圆的半径比较(使用欧拉公式)</p><ol><li>圆上</li><li>圆外</li><li>圆内</li></ol><p>关键点：在一个类中可以让；另一个类作为成员,对于开发不能把很多类写在一个文件中,头文件写声明，源文件写实现</p><h2 id="对象的初始化和清理"><a href="#对象的初始化和清理" class="headerlink" title="对象的初始化和清理"></a>对象的初始化和清理</h2><h3 id="构造函数和析构函数-分别解决初始化和清理两个问题"><a href="#构造函数和析构函数-分别解决初始化和清理两个问题" class="headerlink" title="构造函数和析构函数(分别解决初始化和清理两个问题)"></a>构造函数和析构函数(分别解决初始化和清理两个问题)</h3>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>枚举，宏，多文件</title>
     <link href="/2023/07/09/%E6%9E%9A%E4%B8%BE%EF%BC%8C%E5%AE%8F%EF%BC%8C%E5%A4%9A%E6%96%87%E4%BB%B6/"/>
     <url>/2023/07/09/%E6%9E%9A%E4%B8%BE%EF%BC%8C%E5%AE%8F%EF%BC%8C%E5%A4%9A%E6%96%87%E4%BB%B6/</url>
